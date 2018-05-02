@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C712E72B-83F6-43CE-8233-D7A032040213}</ProjectGuid>
+    <ProjectGuid>{7D474B2D-BDA2-4E55-B7DB-7F62695F2BAD}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>AppWinFormFrameworkPeru</RootNamespace>
-    <AssemblyName>AppWinFormFrameworkPeru</AssemblyName>
+    <RootNamespace>DataObjects</RootNamespace>
+    <AssemblyName>DataObjects</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
