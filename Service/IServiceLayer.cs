@@ -11,6 +11,7 @@ namespace Service
     {
         #region Perfil
         void InsertPerfil(Perfil perfil);
+        List<Perfil> GetPerfiles();
 
         #endregion
 

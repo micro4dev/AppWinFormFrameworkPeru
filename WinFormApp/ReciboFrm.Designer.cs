@@ -40,10 +40,10 @@
             this.kryptonLabel5 = new ComponentFactory.Krypton.Toolkit.KryptonLabel();
             this.btnGrabar = new ComponentFactory.Krypton.Toolkit.KryptonButton();
             this.kryptonButton1 = new ComponentFactory.Krypton.Toolkit.KryptonButton();
-            this.kryptonDataGridView1 = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
+            this.dgvRecibos = new ComponentFactory.Krypton.Toolkit.KryptonDataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.iClienteId)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iPerfilId)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRecibos)).BeginInit();
             this.SuspendLayout();
             // 
             // kryptonLabel1
@@ -60,6 +60,7 @@
             this.iNumerorecibo.Name = "iNumerorecibo";
             this.iNumerorecibo.Size = new System.Drawing.Size(108, 27);
             this.iNumerorecibo.TabIndex = 1;
+            this.iNumerorecibo.Text = "0";
             // 
             // kryptonLabel2
             // 
@@ -71,6 +72,7 @@
             // 
             // iFecharecibo
             // 
+            this.iFecharecibo.CalendarTodayDate = new System.DateTime(2018, 5, 5, 0, 0, 0, 0);
             this.iFecharecibo.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.iFecharecibo.Location = new System.Drawing.Point(119, 63);
             this.iFecharecibo.Name = "iFecharecibo";
@@ -117,6 +119,7 @@
             this.iImporte.Name = "iImporte";
             this.iImporte.Size = new System.Drawing.Size(108, 27);
             this.iImporte.TabIndex = 9;
+            this.iImporte.Text = "0";
             // 
             // kryptonLabel5
             // 
@@ -142,22 +145,23 @@
             this.kryptonButton1.Size = new System.Drawing.Size(140, 39);
             this.kryptonButton1.TabIndex = 11;
             this.kryptonButton1.Values.Text = "Cargar recibos";
+            this.kryptonButton1.Click += new System.EventHandler(this.kryptonButton1_Click);
             // 
-            // kryptonDataGridView1
+            // dgvRecibos
             // 
-            this.kryptonDataGridView1.ColumnHeadersHeight = 28;
-            this.kryptonDataGridView1.Location = new System.Drawing.Point(119, 256);
-            this.kryptonDataGridView1.Name = "kryptonDataGridView1";
-            this.kryptonDataGridView1.RowTemplate.Height = 24;
-            this.kryptonDataGridView1.Size = new System.Drawing.Size(663, 286);
-            this.kryptonDataGridView1.TabIndex = 12;
+            this.dgvRecibos.ColumnHeadersHeight = 28;
+            this.dgvRecibos.Location = new System.Drawing.Point(119, 256);
+            this.dgvRecibos.Name = "dgvRecibos";
+            this.dgvRecibos.RowTemplate.Height = 24;
+            this.dgvRecibos.Size = new System.Drawing.Size(663, 286);
+            this.dgvRecibos.TabIndex = 12;
             // 
             // ReciboFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(920, 559);
-            this.Controls.Add(this.kryptonDataGridView1);
+            this.Controls.Add(this.dgvRecibos);
             this.Controls.Add(this.kryptonButton1);
             this.Controls.Add(this.btnGrabar);
             this.Controls.Add(this.iImporte);
@@ -175,7 +179,7 @@
             this.Load += new System.EventHandler(this.ReciboFrm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.iClienteId)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iPerfilId)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.kryptonDataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRecibos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -195,7 +199,7 @@
         private ComponentFactory.Krypton.Toolkit.KryptonLabel kryptonLabel5;
         private ComponentFactory.Krypton.Toolkit.KryptonButton btnGrabar;
         private ComponentFactory.Krypton.Toolkit.KryptonButton kryptonButton1;
-        private ComponentFactory.Krypton.Toolkit.KryptonDataGridView kryptonDataGridView1;
+        private ComponentFactory.Krypton.Toolkit.KryptonDataGridView dgvRecibos;
     }
 }
 

@@ -21,6 +21,12 @@ namespace Service
         {
             PerfilDao.Insertperfil(perfil);
         }
+
+        public List<Perfil> GetPerfiles()
+        {
+            return PerfilDao.GetPerfiles();
+        }
+
         #endregion
 
         #region Clientes
