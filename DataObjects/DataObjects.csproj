@@ -5,7 +5,7 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{7D474B2D-BDA2-4E55-B7DB-7F62695F2BAD}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <RootNamespace>DataObjects</RootNamespace>
     <AssemblyName>DataObjects</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
@@ -46,6 +46,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />
@@ -84,6 +87,15 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClienteDao.cs" />
+    <Compile Include="DaoFactories.cs" />
+    <Compile Include="DaoFactory.cs" />
+    <Compile Include="IClienteDao.cs" />
+    <Compile Include="IDaoFactory.cs" />
+    <Compile Include="IPerfilDao.cs" />
+    <Compile Include="IReciboDao.cs" />
+    <Compile Include="PerfilDao.cs" />
+    <Compile Include="ReciboDao.cs" />
     <Compile Include="WinFormFrameworkPeruDb.cs" />
   </ItemGroup>
   <ItemGroup>

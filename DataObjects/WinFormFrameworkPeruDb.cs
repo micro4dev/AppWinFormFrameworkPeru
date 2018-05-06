@@ -12,7 +12,7 @@ namespace DataObjects
 {
     class WinFormFrameworkPeruDb : DbContext
     {
-        public WinFormFrameworkPeruDb(DbSet<Cliente> clientes)
+        public WinFormFrameworkPeruDb()
             : base("WinFormFrameworkPeruDb")
         {
 
