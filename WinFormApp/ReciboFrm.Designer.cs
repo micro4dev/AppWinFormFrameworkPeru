@@ -133,6 +133,7 @@
             this.btnGrabar.Size = new System.Drawing.Size(140, 39);
             this.btnGrabar.TabIndex = 10;
             this.btnGrabar.Values.Text = "Grabar recibo";
+            this.btnGrabar.Click += new System.EventHandler(this.btnGrabar_Click);
             // 
             // kryptonButton1
             // 

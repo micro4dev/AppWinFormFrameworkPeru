@@ -27,7 +27,7 @@ namespace DataObjects
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
-            modelBuilder.Configurations.AddFromAssembly(Assembly.GetExecutingAssembly());
+            //modelBuilder.Configurations.AddFromAssembly(Assembly.GetExecutingAssembly());
         }
     }
 }

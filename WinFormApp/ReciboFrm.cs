@@ -37,5 +37,13 @@ namespace WinFormApp
 
 
         }
+
+        private void btnGrabar_Click(object sender, EventArgs e)
+        {
+            Recibo recibo = new Recibo();
+            recibo.NumeroRecibo = Convert.ToInt32(iNumerorecibo.Text);
+
+            _service.InsertRecibo(recibo);
+        }
     }
 }
